@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00bfff;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #00bfff;
+  text-shadow: 0 0 10px #00bfff88, 0 0 20px #00bfff55;
+  }
+  
+  .hero-text p {
+    font-size: 1.25rem;
+    color: #ccc;
+  }
+  
+  .linguagens,
+  .contato {
+    margin-bottom: 2rem;
+  }
+  
+  .linguagens h2,
+  .contato h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .icons {
+    font-size: 3rem;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  a {
+    color: #00bfff;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 600px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  }  
+  
+  .frase {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* ou ajuste conforme o espaço que quiser */
+  margin-bottom: 2rem;
+  text-align: center;
+  }
+  
+  .objetivo,
+  .habilidades,
+  .cursos {
+    margin-bottom: 2.5rem;
+  }
+  
+  .objetivo p {
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+  
+  .habilidades ul,
+  .cursos ul {
+    list-style: square;
+    padding-left: 1.5rem;
+    color: #eee;
+  }
+  
+  .habilidades li,
+  .cursos li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00bfff;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+  
+  .typewriter {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #00bfff;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #00bfff;
+    width: 0;
+    animation: typing 4s steps(60, end) forwards, hide-caret 0s 2.7s forwards;
+  }
+  
+  /* Efeito de digitação */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* Remove a barra de digitação (cursor) ao final */
+  @keyframes hide-caret {
+    to { border-right: none; }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .projetos {
+    margin: 40px 0;
+  }
+  
+  .projetos h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .projeto {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .projeto img.thumb {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .projeto h3 {
+    margin: 10px 0 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .projeto p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @media (max-width: 600px) {
+    .icons {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero {
+      padding: 1rem;
+    }
+  
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-text p {
+      font-size: 1rem;
+    }
+  }
+
+  .projeto p,
+.projeto h3 {
+  padding: 0 5px;
+ }
+
+ @media (max-width: 600px) {
+  section {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+ }
+
+ @media (max-width: 600px) {
+  .typewriter {
+    white-space: normal; /* no celular, quebra linha */
+    width: 100%; /* garante que mostre tudo */
+  }
+ }
+
+ .mobile-text {
+  display: none;
+ }
+
+ .mobile-text {
+  display: block;
+  font-style: italic;
+  color: #00bfff;
+  text-align: center;
+ }
+
+ /* Oculta a frase fixa no desktop */
+ .mobile-text {
+  display: none;
+ }
+
+ /* Exibe só a frase com efeito no desktop */
+ .typewriter {
+  display: block;
+ }
+
+ /* No celular, inverte: mostra a frase simples, esconde o efeito */
+ @media (max-width: 600px) {
+  .typewriter {
+    display: none;
+  }
+
+  .mobile-text {
+    display: block;
+    font-style: italic;
+    color: #00bfff;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+ }
+
+ .botoes-projeto {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+ }
+
+ .botao {
+  padding: 10px 16px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+ }
+
+ .botao:hover {
+  background-color: #ffffff;
+  color: #0f0f0f;
+  transform: scale(1.05);
+ }
+
+ @media (max-width: 600px) {
+  .botoes-projeto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botao {
+    width: 80%;
+    text-align: center;
+  }
+ }
+
+ .github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+ }
+
+ .github-link i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: transform 0.3s;
+ }
+
+ .github-link:hover i {
+  transform: scale(1.2);
+ }
+
+ .github-link:hover {
+  color: #00bfff;
+ }
+
+ .github-link i.devicon-github-original {
+  color: #ffffff !important;
+ }
+
+ .instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+ }
+
+ .instagram-link i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: transform 0.3s;
+ }
+
+ .instagram-link:hover i {
+  transform: scale(1.2);
+ }
+
+ .instagram-link:hover {
+  color: #00bfff;
+ }
+
+ /* Estilizando especificamente o link do Instagram */
+ .instagram-link i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: transform 0.3s;
+ }
+
+ .instagram-link i:hover {
+  transform: scale(1.2);
+ }
+ 
+ 
+
